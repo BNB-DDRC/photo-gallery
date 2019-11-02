@@ -1,4 +1,4 @@
-CREATE KEYSPACE IF NOT EXISTS 'photo_gallery';
+CREATE KEYSPACE IF NOT EXISTS photo_gallery;
 USE photo_gallery;
 
 CREATE TABLE photos (
