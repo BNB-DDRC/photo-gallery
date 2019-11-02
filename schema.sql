@@ -7,7 +7,7 @@ CREATE TABLE listings (
 
 CREATE TABLE photos (
     listing_id INTEGER NOT NULL,
-    photo_id SERIAL NOT NULL PRIMARY KEY, // BIG SERIAL?
+    photo_id BIGSERIAL NOT NULL PRIMARY KEY,
     photo_url TEXT NOT NULL,
     caption VARCHAR(250) NOT NULL,
     FOREIGN KEY (listing_id) REFERENCES listings (listing_id) ON DELETE CASCADE
