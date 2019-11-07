@@ -83,11 +83,3 @@ npm run seed-db
 npm run build
 npm run start
 ```
-
-start with postgresql
-write a script with 10mm+ to generage a csv file
-then after
-how to put that csv file into postgres
-
-GOALS:
-10, 10k, 1 mm, 10 mm
