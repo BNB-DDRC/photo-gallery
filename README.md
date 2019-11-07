@@ -71,11 +71,10 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 From within the root directory:
 
-1. Install webpack.
-2. Install project dependencies.
-3. Seed the database.
-4. Bundle webpack.
-5. Start the server at localhost:3001.
+1. Install project dependencies.
+2. Seed the database.
+3. Bundle webpack.
+4. Start the server at localhost:3001.
 
 ```sh
 npm install
