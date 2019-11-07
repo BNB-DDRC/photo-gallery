@@ -1,5 +1,6 @@
 CREATE KEYSPACE IF NOT EXISTS photo_gallery
   WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
+
 USE photo_gallery;
 
 CREATE TABLE photos (
