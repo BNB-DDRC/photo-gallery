@@ -27,3 +27,4 @@ client/dist/bundle.js
 # CSV files
 postgresql_db/listings.csv 
 postgresql_db/photos.csv
+cassandra_db/photos.csv

@@ -22,14 +22,14 @@ class App extends React.Component {
     fetchData() {
         var parts = document.URL.split("/");
         var lastSegment = parts.pop() || parts.pop();
-        
+
         axios.get(`http://localhost:3001/${lastSegment}`)
         .then(data => this.setState({
             imageData: data.data,
             image: data.data[0],
             dataLoaded: true,
             clickedPhoto: null
-        }) 
+        })
     )};
     prevImage() {
         const newIndex = this.state.index-1;

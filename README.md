@@ -21,7 +21,7 @@
 <!-- this is the url for the photo-gallery module -->
 
 ### POST
-> `/:listingId/upload` Add a photo into a specific listing.
+> `/:listingId` Add a photo into a specific listing.
 
 **Example**
 req body:
