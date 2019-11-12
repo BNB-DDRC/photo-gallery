@@ -18,8 +18,8 @@ class CarouselThumbnailSlider extends React.Component {
                 <div className={styles.miniGallery}>
                 {this.props.imageData.map(image => {
                     return (
-                        <div className={styles.miniGalleryItem} style={{...miniGalleryTranslate, ...currentMiniGalleryImageCss}} >
-                            <img src={image.photoUrl}></img>
+                        <div key={image.photo_id} className={styles.miniGalleryItem} style={{...miniGalleryTranslate, ...currentMiniGalleryImageCss}} >
+                            <img src={image.photo_url}></img>
                         </div>
                     )
                 })}
