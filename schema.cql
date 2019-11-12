@@ -6,8 +6,10 @@ USE photo_gallery;
 
 CREATE TABLE photos (
   listing_id int,
-  photo_id int,
+  photo_id UUID,
   photo_url text,
   caption text,
-  PRIMARY KEY (listing_id)
+  PRIMARY KEY ((listing_id), photo_id)
 );
+
+COPY photo_gallery.photos (listing_id, photo_id, photo_url, caption) FROM './cassandra_db/photos.csv' WITH DELIMITER = ',' AND HEADER = TRUE;
